@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harvest Chicken Dust | Braai Top Grillers</title>
+  <meta name="description" content="Freshly grilled chicken, wings, gizzards and platters. Order via WhatsApp. Harvest Chicken Dust – Braai Top Grillers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-icon">🐔</div>
+        <div>
+          <h1>HARVEST</h1>
+          <p class="tagline">Chicken Dust <span>• Braai Top Grillers</span></p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#platters">Platters</a>
+        <a href="#contact">Contact</a>
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          🛒 <span id="cartCount">0</span>
+        </button>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Grilled to Perfection</h2>
+      <p>Fresh chicken, wings & gizzards • Real flavour, more value</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="https://wa.me/27608837294" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          Order on WhatsApp
+        </a>
+      </div>
+      <p class="promo">Add R8.00 on any meal & get a 330ml Pepsi</p>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-subtitle">Freshly grilled • Choose your combo</p>
+
+      <!-- Chicken -->
+      <div class="category">
+        <h3 class="category-title">Chicken</h3>
+        <div class="menu-grid" id="chicken-items"></div>
+      </div>
+
+      <!-- Chicken & Salad -->
+      <div class="category">
+        <h3 class="category-title">Chicken & Salad</h3>
+        <div class="menu-grid" id="salad-items"></div>
+      </div>
+
+      <!-- Chicken, Pap & Salad -->
+      <div class="category">
+        <h3 class="category-title">Chicken, Pap & Salad</h3>
+        <div class="menu-grid" id="pap-items"></div>
+      </div>
+
+      <!-- Wings & Gizzards -->
+      <div class="category">
+        <h3 class="category-title">Wings & Gizzards</h3>
+        <div class="menu-grid" id="wings-items"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platters -->
+  <section id="platters" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Platters</h2>
+      <p class="section-subtitle">Perfect for sharing</p>
+      <div class="menu-grid" id="platter-items"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">To Order</h2>
+        <div class="contact-info">
+          <p><strong>📞 Call / WhatsApp</strong></p>
+          <p>
+            <a href="tel:+27608837294">060 883 7294</a><br />
+            <a href="tel:+27838777721">083 877 7721</a>
+          </p>
+          <p><strong>🕒 Opening Hours</strong><br />10AM – 8PM • Monday – Sunday</p>
+          <p><strong>📍 Locations</strong></p>
+          <ul>
+            <li>Block VV • Corner Motihtwa & Umphfa</li>
+            <li>Block HH • Opposite Phuthanong Police Station</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust%2C%20I%20would%20like%20to%20order" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="map-placeholder">
+        <p>📍 Phuthanong area</p>
+        <p>Block VV & Block HH</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Harvest Chicken Dust • Braai Top Grillers</p>
+      <p>Real Chicken • Real Flavour</p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Order</h3>
+      <button class="close-btn" id="closeCart" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">R0</strong>
+      </div>
+      <button class="btn btn-primary btn-full" id="checkoutBtn" disabled>Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Checkout Details</h3>
+        <button class="close-btn" id="closeCheckout" aria-label="Close">×</button>
+      </div>
+      <form id="checkoutForm">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="e.g. 060 123 4567" />
+        </div>
+        <div class="form-group">
+          <label for="address">Delivery / Collection Address *</label>
+          <textarea id="address" name="address" rows="2" required placeholder="Street, Block, Landmark"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="notes">Special Instructions (optional)</label>
+          <textarea id="notes" name="notes" rows="2" placeholder="Extra sauce, no salad, etc."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Order Type *</label>
+          <div class="radio-group">
+            <label><input type="radio" name="orderType" value="Collection" checked /> Collection</label>
+            <label><input type="radio" name="orderType" value="Delivery" /> Delivery</label>
+          </div>
+        </div>
+        <div class="order-summary" id="orderSummary"></div>
+        <button type="submit" class="btn btn-whatsapp btn-full">
+          Send Order via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
