@@ -1,33 +1,51 @@
 # Harvest Chicken Dust – Website
 
-Simple, mobile-friendly ordering website for **Harvest Chicken Dust (Braai Top Grillers)**.
+Clean, modern ordering website matching the professional design.
 
 ## Features
-- Full menu (Chicken, Salad, Pap, Wings & Gizzards, Platters)
-- Add items to cart with quantity
-- **WhatsApp order button** on every item
-- Checkout form collecting customer details (name, phone, address, notes, collection/delivery)
-- Sends a complete order summary directly to WhatsApp
-- Responsive design matching the dark branded look
+- Light professional theme (as in the design mockup)
+- Full menu with image placeholders for every item
+- Green **Order on WhatsApp** button on every item
+- Hero section with Pepsi promo
+- Why Choose Us + Locations + Ready to Order CTA
+- Mobile responsive
+- Sticky header with navigation
 
-## Live Demo / Deploy on GitHub Pages
+## How to add your photos
+Create an `images` folder and add these files:
 
-1. Create a new GitHub repository (e.g. `harvest-chicken-dust`)
-2. Upload these files (`index.html`, `styles.css`, `script.js`, `README.md`)
-3. Go to **Settings → Pages**
-4. Set Source to `main` branch / root
-5. Your site will be live at `https://YOUR-USERNAME.github.io/harvest-chicken-dust/`
+| File name              | Used for                  |
+|------------------------|---------------------------|
+| logo.png               | Header logo               |
+| hero-food.jpg          | Big hero photo            |
+| qtr-chicken.jpg        | Quarter Chicken           |
+| half-chicken.jpg       | Half Chicken              |
+| full-chicken.jpg       | Full Chicken              |
+| qtr-salad.jpg          | Qtr + Salad               |
+| half-salad.jpg         | Half + Salad              |
+| full-salad.jpg         | Full + Salad              |
+| qtr-pap.jpg            | Qtr + Pap & Salad         |
+| half-pap.jpg           | Half + Pap & Salad        |
+| full-pap.jpg            | Full + Pap & Salad        |
+| gizzards.jpg           | Gizzards & Fries          |
+| 2wings.jpg             | 2x Wings & Fries          |
+| 3wings.jpg             | 3x Wings & Fries          |
+| platter1.jpg           | Small platter             |
+| platter2.jpg           | Medium platter            |
+| platter3.jpg           | Large platter             |
+| pepsi.png              | Pepsi bottle              |
+| banner-chicken.jpg     | Banner food image         |
 
-## WhatsApp Number
-Orders are sent to: **060 883 7294** (`27608837294`)
+Until you add the photos, grey placeholders will show.
 
-You can change the number in `script.js` (look for `WHATSAPP_NUMBER`).
+## Deploy on GitHub Pages
+1. Create a new repo
+2. Upload all files (including the `images` folder)
+3. Settings → Pages → Source = main / root
+4. Live at `https://YOUR-USERNAME.github.io/REPO-NAME/`
 
-## Contact
-- 060 883 7294
-- 083 877 7721
-- Hours: 10AM – 8PM (Mon–Sun)
-- Locations: Block VV (Corner Motihtwa & Umphfa) • Block HH (Opposite Phuthanong Police Station)
+## WhatsApp number
+Orders go to **060 883 7294** (change in `index.html` if needed – search for `27608837294`).
 
 ---
-Made for Harvest Chicken Dust 🐔
+Harvest Chicken Dust • Shayi Top Grillers

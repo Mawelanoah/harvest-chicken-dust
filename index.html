@@ -3,186 +3,434 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harvest Chicken Dust | Braai Top Grillers</title>
-  <meta name="description" content="Freshly grilled chicken, wings, gizzards and platters. Order via WhatsApp. Harvest Chicken Dust – Braai Top Grillers." />
+  <title>Harvest Chicken Dust | Shayi Top Grillers</title>
+  <meta name="description" content="Freshly grilled chicken, wings, gizzards and delicious meal combinations. Harvest Chicken Dust – Shayi Top Grillers." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- ========== HEADER ========== -->
   <header class="header">
     <div class="container header-inner">
-      <div class="logo">
-        <div class="logo-icon">🐔</div>
-        <div>
-          <h1>HARVEST</h1>
-          <p class="tagline">Chicken Dust <span>• Braai Top Grillers</span></p>
+      <a href="#" class="logo">
+        <!-- Replace images/logo.png with your logo -->
+        <img src="images/logo.png" alt="Harvest Chicken Dust" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="logo-fallback">
+          <span class="logo-icon">🐔</span>
+          <div class="logo-text">
+            <strong>HARVEST</strong>
+            <span>Chicken Dust</span>
+            <small>Shayi Top Grillers</small>
+          </div>
         </div>
-      </div>
-      <nav class="nav">
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="#home" class="active">Home</a>
         <a href="#menu">Menu</a>
-        <a href="#platters">Platters</a>
+        <a href="#about">About</a>
+        <a href="#locations">Locations</a>
         <a href="#contact">Contact</a>
-        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
-          🛒 <span id="cartCount">0</span>
-        </button>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+      <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust%2C%20I%20would%20like%20to%20order" class="btn btn-order" target="_blank" rel="noopener">
+        💬 Order Now
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h2>Grilled to Perfection</h2>
-      <p>Fresh chicken, wings & gizzards • Real flavour, more value</p>
-      <div class="hero-actions">
-        <a href="#menu" class="btn btn-primary">View Menu</a>
-        <a href="https://wa.me/27608837294" class="btn btn-whatsapp" target="_blank" rel="noopener">
-          Order on WhatsApp
-        </a>
-      </div>
-      <p class="promo">Add R8.00 on any meal & get a 330ml Pepsi</p>
-    </div>
-  </section>
-
-  <!-- Menu -->
-  <section id="menu" class="section">
-    <div class="container">
-      <h2 class="section-title">Our Menu</h2>
-      <p class="section-subtitle">Freshly grilled • Choose your combo</p>
-
-      <!-- Chicken -->
-      <div class="category">
-        <h3 class="category-title">Chicken</h3>
-        <div class="menu-grid" id="chicken-items"></div>
-      </div>
-
-      <!-- Chicken & Salad -->
-      <div class="category">
-        <h3 class="category-title">Chicken & Salad</h3>
-        <div class="menu-grid" id="salad-items"></div>
-      </div>
-
-      <!-- Chicken, Pap & Salad -->
-      <div class="category">
-        <h3 class="category-title">Chicken, Pap & Salad</h3>
-        <div class="menu-grid" id="pap-items"></div>
-      </div>
-
-      <!-- Wings & Gizzards -->
-      <div class="category">
-        <h3 class="category-title">Wings & Gizzards</h3>
-        <div class="menu-grid" id="wings-items"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Platters -->
-  <section id="platters" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Platters</h2>
-      <p class="section-subtitle">Perfect for sharing</p>
-      <div class="menu-grid" id="platter-items"></div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container contact-grid">
-      <div>
-        <h2 class="section-title">To Order</h2>
-        <div class="contact-info">
-          <p><strong>📞 Call / WhatsApp</strong></p>
-          <p>
-            <a href="tel:+27608837294">060 883 7294</a><br />
-            <a href="tel:+27838777721">083 877 7721</a>
-          </p>
-          <p><strong>🕒 Opening Hours</strong><br />10AM – 8PM • Monday – Sunday</p>
-          <p><strong>📍 Locations</strong></p>
-          <ul>
-            <li>Block VV • Corner Motihtwa & Umphfa</li>
-            <li>Block HH • Opposite Phuthanong Police Station</li>
-          </ul>
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="welcome">Welcome to</p>
+        <h1>HARVEST<br><span>CHICKEN DUST</span></h1>
+        <p class="tagline">Shayi Top Grillers</p>
+        <p class="hero-desc">Freshly grilled chicken, wings, gizzards and delicious meal combinations.</p>
+        <div class="hero-btns">
+          <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust%2C%20I%20would%20like%20to%20order" class="btn btn-red" target="_blank" rel="noopener">
+            💬 Order Now
+          </a>
+          <a href="#menu" class="btn btn-outline">☰ View Menu</a>
         </div>
-        <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust%2C%20I%20would%20like%20to%20order" class="btn btn-whatsapp" target="_blank" rel="noopener">
-          Chat on WhatsApp
-        </a>
       </div>
-      <div class="map-placeholder">
-        <p>📍 Phuthanong area</p>
-        <p>Block VV & Block HH</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Harvest Chicken Dust • Braai Top Grillers</p>
-      <p>Real Chicken • Real Flavour</p>
-    </div>
-  </footer>
-
-  <!-- Cart Sidebar -->
-  <div class="cart-overlay" id="cartOverlay"></div>
-  <aside class="cart-sidebar" id="cartSidebar">
-    <div class="cart-header">
-      <h3>Your Order</h3>
-      <button class="close-btn" id="closeCart" aria-label="Close cart">×</button>
-    </div>
-    <div class="cart-items" id="cartItems">
-      <p class="empty-cart">Your cart is empty</p>
-    </div>
-    <div class="cart-footer">
-      <div class="cart-total">
-        <span>Total</span>
-        <strong id="cartTotal">R0</strong>
+      <div class="hero-image">
+        <!-- Replace with your hero food photo -->
+        <div class="img-box">
+          <img src="images/hero-food.jpg" alt="Grilled chicken meal with salad, pap and Pepsi" onerror="this.parentElement.classList.add('placeholder-box'); this.style.display='none';">
+          <span class="placeholder-text">Add hero food photo here<br><small>images/hero-food.jpg</small></span>
+        </div>
+        <div class="pepsi-badge">
+          ADD R8.00<br>ON ANY OF THE MEALS AND GET<br><strong>330ml PEPSI.</strong>
+        </div>
       </div>
-      <button class="btn btn-primary btn-full" id="checkoutBtn" disabled>Proceed to Checkout</button>
     </div>
-  </aside>
 
-  <!-- Checkout Modal -->
-  <div class="modal-overlay" id="checkoutModal">
-    <div class="modal">
-      <div class="modal-header">
-        <h3>Checkout Details</h3>
-        <button class="close-btn" id="closeCheckout" aria-label="Close">×</button>
-      </div>
-      <form id="checkoutForm">
-        <div class="form-group">
-          <label for="name">Full Name *</label>
-          <input type="text" id="name" name="name" required placeholder="Your full name" />
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone Number *</label>
-          <input type="tel" id="phone" name="phone" required placeholder="e.g. 060 123 4567" />
-        </div>
-        <div class="form-group">
-          <label for="address">Delivery / Collection Address *</label>
-          <textarea id="address" name="address" rows="2" required placeholder="Street, Block, Landmark"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="notes">Special Instructions (optional)</label>
-          <textarea id="notes" name="notes" rows="2" placeholder="Extra sauce, no salad, etc."></textarea>
-        </div>
-        <div class="form-group">
-          <label>Order Type *</label>
-          <div class="radio-group">
-            <label><input type="radio" name="orderType" value="Collection" checked /> Collection</label>
-            <label><input type="radio" name="orderType" value="Delivery" /> Delivery</label>
+    <!-- Info bar -->
+    <div class="info-bar">
+      <div class="container info-bar-inner">
+        <div class="info-item">
+          <span class="info-icon">🕐</span>
+          <div>
+            <strong>10AM – 8PM</strong>
+            <span>MON – SUN</span>
           </div>
         </div>
-        <div class="order-summary" id="orderSummary"></div>
-        <button type="submit" class="btn btn-whatsapp btn-full">
-          Send Order via WhatsApp
-        </button>
-      </form>
+        <div class="info-item">
+          <span class="info-icon">📞</span>
+          <div>
+            <strong>0608 83 7294</strong>
+            <span>083 877 7721</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <strong>BLOCK VV, Corner Motihtwa & Umpha</strong>
+            <span>BLOCK HH Opposite Phuthonong Police Station</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-header">
+        <h2><span class="red-icon">🐔</span> OUR MENU</h2>
+        <p class="section-tag">Great food. Great taste.</p>
+      </div>
+
+      <!-- CHICKEN -->
+      <div class="menu-category">
+        <h3 class="cat-title"><span>🐔</span> CHICKEN</h3>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/qtr-chicken.jpg" alt="Quarter Chicken" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/qtr-chicken.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Qtr Chicken</h4>
+              <p class="price">R40</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Qtr%20Chicken%20–%20R40%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/half-chicken.jpg" alt="Half Chicken" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/half-chicken.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Half Chicken</h4>
+              <p class="price">R80</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Half%20Chicken%20–%20R80%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/full-chicken.jpg" alt="Full Chicken" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/full-chicken.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Full Chicken</h4>
+              <p class="price">R140</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Full%20Chicken%20–%20R140%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- CHICKEN & SALAD -->
+      <div class="menu-category">
+        <h3 class="cat-title"><span>🥗</span> CHICKEN & SALAD</h3>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/qtr-salad.jpg" alt="Qtr Chicken & Salad" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/qtr-salad.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Qtr Chicken & Salad</h4>
+              <p class="price">R45</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Qtr%20Chicken%20%26%20Salad%20–%20R45%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/half-salad.jpg" alt="Half Chicken & Salad" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/half-salad.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Half Chicken & Salad</h4>
+              <p class="price">R85</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Half%20Chicken%20%26%20Salad%20–%20R85%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/full-salad.jpg" alt="Full Chicken & Salad" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/full-salad.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Full Chicken & Salad</h4>
+              <p class="price">R145</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Full%20Chicken%20%26%20Salad%20–%20R145%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- CHICKEN, PAP & SALAD -->
+      <div class="menu-category">
+        <h3 class="cat-title"><span>🍚</span> CHICKEN, PAP & SALAD</h3>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/qtr-pap.jpg" alt="Qtr Chicken, Pap & Salad" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/qtr-pap.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Qtr Chicken, Pap & Salad</h4>
+              <p class="price">R50</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Qtr%20Chicken%2C%20Pap%20%26%20Salad%20–%20R50%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/half-pap.jpg" alt="Half Chicken, Pap & Salad" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/half-pap.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Half Chicken, Pap & Salad</h4>
+              <p class="price">R90</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Half%20Chicken%2C%20Pap%20%26%20Salad%20–%20R90%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/full-pap.jpg" alt="Full Chicken, Pap & Salad" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/full-pap.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>Full Chicken, Pap & Salad</h4>
+              <p class="price">R150</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Full%20Chicken%2C%20Pap%20%26%20Salad%20–%20R150%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- WINGS & GIZZARDS -->
+      <div class="menu-category">
+        <h3 class="cat-title"><span>🔥</span> WINGS & GIZZARDS</h3>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/gizzards.jpg" alt="2x Stick Juicy Gizzards & Fries" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/gizzards.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>2x Stick Juicy Gizzards & Fries</h4>
+              <p class="price">R25</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%202x%20Stick%20Juicy%20Gizzards%20%26%20Fries%20–%20R25%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/2wings.jpg" alt="2x Wings & Fries" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/2wings.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>2x Wings & Fries</h4>
+              <p class="price">R35</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%202x%20Wings%20%26%20Fries%20–%20R35%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/3wings.jpg" alt="3x Wings & Fries" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/3wings.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>3x Wings & Fries</h4>
+              <p class="price">R45</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%203x%20Wings%20%26%20Fries%20–%20R45%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- PLATTERS -->
+      <div class="menu-category">
+        <h3 class="cat-title"><span>👥</span> PLATTERS</h3>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/platter1.jpg" alt="1x Wing, 1x Gizzard + Quarter Chicken" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/platter1.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>1x Wing, 1x Gizzard + Quarter Chicken</h4>
+              <p class="price">R55</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%201x%20Wing%2C%201x%20Gizzard%20%2B%20Quarter%20Chicken%20–%20R55%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/platter2.jpg" alt="2x Wings + 2x Gizzards + Half Chicken" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/platter2.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>2x Wings + 2x Gizzards + Half Chicken</h4>
+              <p class="price">R100</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%202x%20Wings%20%2B%202x%20Gizzards%20%2B%20Half%20Chicken%20–%20R100%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="card-img">
+              <img src="images/platter3.jpg" alt="4x Wings + 4x Gizzards + Full Chicken" onerror="this.style.display='none'">
+              <span class="ph-text">Add photo<br>images/platter3.jpg</span>
+            </div>
+            <div class="card-body">
+              <h4>4x Wings + 4x Gizzards + Full Chicken</h4>
+              <p class="price">R180</p>
+              <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust!%0A%0AI%20would%20like%20to%20order%3A%0A•%204x%20Wings%20%2B%204x%20Gizzards%20%2B%20Full%20Chicken%20–%20R180%0A%0APlease%20confirm.%20Thank%20you!" class="btn btn-wa" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PEPSI BANNER ========== -->
+  <section class="pepsi-banner">
+    <div class="container pepsi-inner">
+      <div class="pepsi-left">
+        <div class="pepsi-img-box">
+          <img src="images/pepsi.png" alt="Pepsi" onerror="this.style.display='none'">
+          <span class="ph-text">Add Pepsi image</span>
+        </div>
+        <div>
+          <h3>ADD <span>R8.00</span></h3>
+          <p>ON ANY OF THE MEALS AND GET<br><strong>330ml PEPSI.</strong></p>
+        </div>
+      </div>
+      <div class="pepsi-right">
+        <div class="banner-food-box">
+          <img src="images/banner-chicken.jpg" alt="Grilled chicken" onerror="this.style.display='none'">
+          <span class="ph-text">Add photo</span>
+        </div>
+        <p class="banner-tag">More flavour<br>More value!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY + LOCATIONS + CTA ========== -->
+  <section id="about" class="section bottom-section">
+    <div class="container bottom-grid">
+
+      <div class="why-box">
+        <h3>🍴 WHY CHOOSE US?</h3>
+        <div class="why-grid">
+          <div class="why-item">
+            <span class="why-icon">🔥</span>
+            <strong>Freshly Grilled</strong>
+            <p>Delicious grilled chicken prepared for your meal.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">🐔</span>
+            <strong>Generous Portions</strong>
+            <p>Quarter, half and full chicken meals.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">👥</span>
+            <strong>Family Options</strong>
+            <p>Platter options for more than one person.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">👍</span>
+            <strong>Easy Ordering</strong>
+            <p>Call or WhatsApp directly to place your order.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="locations" class="locations-box">
+        <h3>📍 OUR LOCATIONS</h3>
+        <div class="loc-cards">
+          <div class="loc-card">
+            <span class="loc-pin">📍</span>
+            <div>
+              <strong>BLOCK VV</strong>
+              <p>Corner Motihtwa & Umpha</p>
+              <a href="https://maps.google.com/?q=Phuthanong" class="btn-dir" target="_blank" rel="noopener">Get Directions →</a>
+            </div>
+          </div>
+          <div class="loc-card">
+            <span class="loc-pin">📍</span>
+            <div>
+              <strong>BLOCK HH</strong>
+              <p>Opposite Phuthonong Police Station</p>
+              <a href="https://maps.google.com/?q=Phuthanong+Police+Station" class="btn-dir" target="_blank" rel="noopener">Get Directions →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="cta-box">
+        <h3>📞 READY TO ORDER?</h3>
+        <p class="cta-phones">
+          <strong>0608 83 7294</strong><br>
+          <strong>083 877 7721</strong>
+        </p>
+        <a href="https://wa.me/27608837294?text=Hi%20Harvest%20Chicken%20Dust%2C%20I%20would%20like%20to%20order" class="btn btn-wa btn-lg" target="_blank" rel="noopener">
+          💬 Order on WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <strong>HARVEST</strong> Chicken Dust<br>
+        <small>Shayi Top Grillers</small>
+      </div>
+      <div class="footer-mid">
+        Fresh chicken • Wings • Gizzards • Platters
+      </div>
+      <div class="footer-contact">
+        📞 0608 83 7294 &nbsp;|&nbsp; 083 877 7721
+      </div>
+      <div class="footer-loc">
+        📍 BLOCK VV, Corner Motihtwa & Umpha<br>
+        BLOCK HH, Opposite Phuthonong Police Station
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Good Food • Great Vibes
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
